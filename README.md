@@ -4,3 +4,4 @@
 - **GoogleAuthenticator**: Google Authenticator 2-factor authentication
 - **GetIPAddress**: Get IP address
 - **RSA**: Encrypt & Decrypt RSA
+- **FilterInput**: Filter input data
