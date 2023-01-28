@@ -1,23 +1,20 @@
 <?php
 require_once 'GoogleAuthenticator.php';
-function Create2FACode()
+function create2FACode()
 {
     $ga = new GoogleAuthenticator();
-    $secret = $ga->createSecret();
-    return $secret;
+    return $ga->createSecret();
 }
-function Check2FACode($code, $secret)
+function check2FACode($code, $secret)
 {
     $ga = new GoogleAuthenticator();
-    $checkResult = $ga->verifyCode($secret, $code, 2);
-    if ($checkResult) {
+    if ($ga->verifyCode($secret, $code, 2)) {
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
-$secret = Create2FACode();
-if (Check2FACode($code, $secret) == true) {
+$secret = create2FACode();
+if (check2FACode($code, $secret)) {
     // do something
 } else {
     echo 'Invalid Authentication Code';
