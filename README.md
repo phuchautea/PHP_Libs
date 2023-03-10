@@ -6,3 +6,4 @@
 - **RSA**: Encrypt & Decrypt RSA
 - **FilterInput**: Filter input data
 - **FormatNumber**: Ex: 100000->100.000
+- **isEmail**: Is a valid email address
