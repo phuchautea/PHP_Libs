@@ -18,3 +18,5 @@
 | Gmobile | 099, 059 |
 | Itel | 087, 056, 058 |
 | Wintel | 055 |
+
+- **cURL**: GET request
