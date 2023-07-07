@@ -20,3 +20,4 @@
 | Wintel | 055 |
 
 - **cURL**: GET request
+- **getElapsedTimeString**: Tính khoảng thời gian từ 1 thời điểm
